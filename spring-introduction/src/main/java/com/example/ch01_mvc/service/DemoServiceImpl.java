@@ -1,7 +1,7 @@
-package com.example.mvc.service;
+package com.example.ch01_mvc.service;
 
-import com.example.mvc.dao.DemoDao;
-import com.example.mvc.dao.DemoDaoImpl;
+import com.example.ch01_mvc.dao.DemoDao;
+import com.example.ch01_mvc.dao.DemoDaoImpl;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * @author lijing
  * @date 2020/11/19 21:14
  **/
-public class DemoServiceImpl implements DemoService{
+public class DemoServiceImpl implements DemoService {
 
     // 内部依赖 DemoDao 接口
     private final DemoDao demoDao = new DemoDaoImpl();

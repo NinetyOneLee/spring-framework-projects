@@ -1,4 +1,4 @@
-package com.example.mvc.service;
+package com.example.ch02_factory.service;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import java.util.List;
  * @date 2020/11/19 21:09
  **/
 public interface DemoService {
+
     /**
      * 从数据库查询一组数据
      *

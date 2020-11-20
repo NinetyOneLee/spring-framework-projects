@@ -1,7 +1,7 @@
-package com.example.mvc.servlet;
+package com.example.ch02_factory.servlet;
 
-import com.example.mvc.service.DemoService;
-import com.example.mvc.service.DemoServiceImpl;
+import com.example.ch02_factory.factory.BeanFactory;
+import com.example.ch02_factory.service.DemoService;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,10 +16,10 @@ import java.util.List;
  * @author lijing
  * @date 2020/11/19 21:01
  **/
-@WebServlet(urlPatterns = "/demo")
+@WebServlet(urlPatterns = "/factory")
 public class DemoServlet extends HttpServlet {
 
-    DemoService demoService = new DemoServiceImpl();
+    public static final DemoService demoService = BeanFactory.getDemoService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {

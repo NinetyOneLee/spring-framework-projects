@@ -1,4 +1,4 @@
-package com.example.mvc.dao;
+package com.example.ch01_mvc.dao;
 
 import java.util.List;
 
